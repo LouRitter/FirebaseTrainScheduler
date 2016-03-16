@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+</head>
+<body>
+<div class="jumbotron">
+<h1>Train Schedule</h1>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Train List</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency(min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody class="trains">
+   
+    </div>
+    </tbody>
+  </table>
+</div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Train</h3>
+  </div>
+  <div class="panel-body">
+    <h6>Train Name</h6>
+    <input type="text" placeholder= "Add a Train" id="trainName"><br>
+    <h6>Destination</h6>
+    <input type="text" placeholder= "Enter a Destination" id="destination"><br>
+    <h6>First Train Time</h6>
+    <input type="text" placeholder= "HH:mm (military time)" id="firstTime"><br>
+    <h6>Frequency</h6>
+    <input type="text" placeholder= "Frequency of Train (min)" id="frequency"><br>
+    
+    <button id="addTrain" type="submit" class="btn">Add Train</button>
+  </div>
+</div>
+
+</body>
+
+</html>
+<script src="train.js"></script>
